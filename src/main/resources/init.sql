@@ -27,3 +27,14 @@ CREATE TABLE `nt_first`.`ft_product`  (
   `udpate_time` datetime(0) NOT NULL DEFAULT CURRENT_TIMESTAMP(0) ON UPDATE CURRENT_TIMESTAMP(0),
   PRIMARY KEY (`id`) USING BTREE
 ) ENGINE = InnoDB AUTO_INCREMENT = 1 CHARACTER SET = utf8 COLLATE = utf8_general_ci ROW_FORMAT = Dynamic;
+
+
+
+
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (1, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 5, 0, '2020-11-24 17:12:07', '2020-11-24 17:31:39');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (2, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 0, '2020-11-24 17:12:16', '2020-11-24 17:31:47');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (3, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 1, '2020-11-24 17:12:24', '2020-11-24 17:32:07');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (4, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 1, '2020-11-24 17:12:24', '2020-11-24 17:32:07');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (5, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 1, '2020-11-24 17:12:24', '2020-11-24 17:32:07');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (6, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 1, '2020-11-24 17:12:24', '2020-11-24 17:32:07');
+INSERT INTO `nt_first`.`ft_news`(`id`, `title`, `description`, `photo_url`, `content`, `author`, `visit_count`, `is_delete`, `create_time`, `update_time`) VALUES (7, '菲斯拓&晟汇养车', '菲斯拓润滑油联合清远晟汇养车推出选用菲斯拓机油定期保养享10年/20万公里发动机保修活动。', 'http://www.fixtop.cn/static/photo/news.png', 'http://www.fixtop.cn/static/html/news.html', 'FIXTOP', 0, 1, '2020-11-24 17:12:24', '2020-11-24 17:32:07');
