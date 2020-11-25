@@ -1,30 +1,28 @@
 package com.lookcar.xsyz.ntfirst.util;
 
+import com.alibaba.fastjson.JSONObject;
 import com.lookcar.xsyz.ntfirst.enumresponse.ResponseEnum;
-
-import java.util.HashMap;
-import java.util.Map;
 
 public class ResponseUtil {
 
-    public static Map<String, Object> getSuccessResult() {
+    public static JSONObject getSuccessResult() {
         return buildResponse(ResponseEnum.SUCCESS, null);
     }
 
-    public static Map<String, Object> getSuccessResult(Object data) {
+    public static JSONObject getSuccessResult(Object data) {
         return buildResponse(ResponseEnum.SUCCESS, data);
     }
 
-    public static Map<String, Object> getResponseData(ResponseEnum responseEnum) {
+    public static JSONObject getResponseData(ResponseEnum responseEnum) {
         return buildResponse(responseEnum, null);
     }
 
-    public static Map<String, Object> getResponseData(ResponseEnum responseEnum, Object data) {
+    public static JSONObject getResponseData(ResponseEnum responseEnum, Object data) {
         return buildResponse(responseEnum, data);
     }
 
-    private static Map<String, Object> buildResponse(ResponseEnum responseEnum, Object data) {
-        Map<String, Object> result = new HashMap<>();
+    private static JSONObject buildResponse(ResponseEnum responseEnum, Object data) {
+        JSONObject result = new JSONObject();
         result.put("code", responseEnum.getCode());
         result.put("msg", responseEnum.getMsg());
         if (data != null) {

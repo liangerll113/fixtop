@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 public class WebConfig {
 
-    @Bean
+    /*@Bean
     public FilterRegistrationBean reqResFilter() {
         FilterRegistrationBean registration = new FilterRegistrationBean();
         registration.setFilter(new UserTokenFilter());
@@ -17,5 +17,5 @@ public class WebConfig {
         registration.setName("MyFilter");
         registration.setOrder(1);
         return registration;
-    }
+    }*/
 }
