@@ -9,9 +9,9 @@ spring:
   datasource:
     druid.type: com.alibaba.druid.pool.DataSource
     driver-class-name: com.mysql.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/nt_first?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    username: root
-    password: xinwodexie113
+    url: jdbc:mysql://localhost:3306/fixtop?useUnicode=true&characterEncoding=utf-8&useSSL=false
+    username: fixtop
+    password: fixtop_113
     #连接池配置
     initial-size: 5
     min-idle: 5
@@ -50,3 +50,11 @@ spring:
     redis.poolMaxIdle: 10
     ## 连接池最大阻塞等待时间（使用负值表示没有限制）
     redis.poolMaxWait: 3
+
+
+
+pagehelper:
+  helperDialect: "mysql"
+  reasonable: "true"
+  supportMethodsArguments: "true"
+  params: "count=countSql"

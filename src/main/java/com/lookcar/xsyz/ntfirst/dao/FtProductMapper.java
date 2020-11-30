@@ -1,6 +1,6 @@
 package com.lookcar.xsyz.ntfirst.dao;
 
-import com.lookcar.xsyz.ntfirst.entity.FtNews;
+import com.lookcar.xsyz.ntfirst.entity.FtProduct;
 import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
@@ -11,6 +11,8 @@ import java.util.List;
  **/
 public interface FtProductMapper {
 
+    List<FtProduct> getProductList(@Param("type") int type);
 
+    FtProduct getProductDetail(@Param("id") int id);
 
 }

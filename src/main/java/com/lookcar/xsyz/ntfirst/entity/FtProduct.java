@@ -33,7 +33,7 @@ public class FtProduct {
     /**
      * 产品描述
      */
-    private int productDescription;
+    private String productDescription;
     /**
      * 产品特性
      */
@@ -95,11 +95,11 @@ public class FtProduct {
         this.productAuthentication = productAuthentication;
     }
 
-    public int getProductDescription() {
+    public String getProductDescription() {
         return productDescription;
     }
 
-    public void setProductDescription(int productDescription) {
+    public void setProductDescription(String productDescription) {
         this.productDescription = productDescription;
     }
 

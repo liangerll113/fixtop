@@ -14,17 +14,17 @@
 
     <select id="getNewsDetail" resultMap="baseResultMap">
         select id, title, description, photo_url photoUrl, content, author, visit_count visitCount, create_time createTime from ft_news
-        where id = #{id}
+        where id = #{id} and is_delete = 0
     </select>
 
     <select id="prevNews" resultMap="baseResultMap">
         select id, title, description, photo_url photoUrl, content, author, visit_count visitCount, create_time createTime from ft_news
-        where id &lt; #{id} order by id desc limit 1
+        where id &lt; #{id} and is_delete = 0 order by id desc limit 1
     </select>
 
     <select id="nextNews" resultMap="baseResultMap">
         select id, title, description, photo_url photoUrl, content, author, visit_count visitCount, create_time createTime from ft_news
-        where id > #{id} order by id limit 1
+        where id > #{id} and is_delete = 0 order by id limit 1
     </select>
 
     <update id="recordVisitCount">

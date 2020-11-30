@@ -1,3 +1,10 @@
+
+CREATE USER 'dog'@'localhost' IDENTIFIED BY '123456';
+
+
+
+
+
 CREATE TABLE `nt_first`.`ft_news`  (
   `id` int(11) NOT NULL AUTO_INCREMENT COMMENT '主键ID',
   `title` varchar(64) CHARACTER SET utf8 COLLATE utf8_general_ci NOT NULL COMMENT '新闻标题',

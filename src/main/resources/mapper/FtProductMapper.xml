@@ -7,6 +7,36 @@
 
     </resultMap>
 
+    <select id="getProductList" resultMap="baseResultMap">
+        select
+        id,
+        product_type productType,
+        product_name productName,
+        product_photo productPhoto,
+        product_capacity productCapacity,
+        product_authentication productAuthentication,
+        product_description productDescription,
+        product_features productFeatures,
+        product_iso productIso,
+        create_time createTime
+        from ft_product
+        where is_delete = 0 and product_type = #{type} order by create_time desc
+    </select>
 
+    <select id="getProductDetail" resultMap="baseResultMap">
+        select
+        id,
+        product_type productType,
+        product_name productName,
+        product_photo productPhoto,
+        product_capacity productCapacity,
+        product_authentication productAuthentication,
+        product_description productDescription,
+        product_features productFeatures,
+        product_iso productIso,
+        create_time createTime
+        from ft_product
+        where id = #{id} and is_delete = 0
+    </select>
 
 </mapper>

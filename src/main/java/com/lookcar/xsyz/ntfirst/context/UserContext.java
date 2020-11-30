@@ -48,7 +48,4 @@ public class UserContext {
         UserContext.stringRedisTemplate = stringRedisTemplate;
     }
 
-    public UserContext() {
-        System.out.println("666666666666");
-    }
 }
