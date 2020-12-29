@@ -9,7 +9,7 @@
 
     <select id="getNewsList" resultMap="baseResultMap">
         select id, title, description, photo_url photoUrl, content, author, visit_count visitCount, create_time createTime from ft_news
-        where is_delete = 0 order by id limit 6
+        where is_delete = 0 order by id
     </select>
 
     <select id="getNewsDetail" resultMap="baseResultMap">
